@@ -1,4 +1,4 @@
-![Logo](./full.png)
+![Logo](./full_t.png)
 
 # QTPIE
 ## Quiz and Test Parsing and Importing Engine
