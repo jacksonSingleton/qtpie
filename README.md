@@ -7,9 +7,9 @@
 QTPIE is a tool for parsing and importing quiz and test files in the QTI format
 It is a CLI executable that can be used to convert and validate QTI files for use in other systems and data pipelines
 
-# QTI Example Files Attribution
+## QTI Example Files Attribution
 
-## License & Atrtribution
+### License & Atrtribution
 - This project includes example XML files from the IMS Global Learning Consortium's QTI Specification.
 - These files are provided for testing and interoperability validation purposes only. They are subject to the IMS Global Learning Consortium Specification Document License.
 - Original source: https://github.com/1EdTech/qti-examples
