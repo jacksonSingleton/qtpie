@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+	identifier="Item2" title="Put the following sentences in order" 
+        adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" base-type="identifier" cardinality="ordered">
+        <qti-correct-response>
+            <qti-value>fourthSentence</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>1</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+
+    <qti-assessment-stimulus-ref identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
+    
+    <qti-item-body>
+        <qti-order-interaction max-choices="5" min-choices="1" shuffle="false"
+            orientation="vertical" response-identifier="RESPONSE">
+            <qti-prompt data-catalog-idref="content2"> Put the following sentences in the order in which they happened
+                in the story. </qti-prompt>
+            <qti-simple-choice identifier="firstSentence" data-catalog-idref="content5">
+                Anina saw the crocodile. </qti-simple-choice>
+            <qti-simple-choice identifier="secondSentence" data-catalog-idref="content3">
+                The crocodile ate two flamingos. </qti-simple-choice>
+            <qti-simple-choice identifier="thirdSentence" data-catalog-idref="content6">
+                Anina tried to explain the broken door to her parents. </qti-simple-choice>
+            <qti-simple-choice identifier="fourthSentence" data-catalog-idref="content8">
+                Anina started to walk to the bathroom. </qti-simple-choice>
+            <qti-simple-choice identifier="fifthSentence" data-catalog-idref="content7">
+                Anina ran to the bedroom and slammed the door. </qti-simple-choice>
+        </qti-order-interaction>
+    </qti-item-body>
+    <qti-catalog-info>
+        <qti-catalog id="content2">
+            <qti-card support="braille">
+                <qti-html-content>Put the following sentences in the order 
+                    in which they happened in the story.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Put the following sentences in the order 
+                        in which they happened in the story.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content5">
+            <qti-card support="braille">
+                <qti-html-content>Anina saw the crocodile.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina saw the crocodile.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content3">
+            <qti-card support="braille">
+                <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content6">
+            <qti-card support="braille">
+                <qti-html-content>Anina tried to explain the broken door to her parents.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina tried to explain the broken door to her parents.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content8">
+            <qti-card support="braille">
+                <qti-html-content>Anina started to walk to the bathroom.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina started to walk to the bathroom.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content7">
+            <qti-card support="braille">
+                <qti-html-content>Anina ran to the bedroom and slammed the door.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina ran to the bedroom and slammed the door.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+    </qti-catalog-info>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE"/>
+                    <qti-correct identifier="RESPONSE"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-variable identifier="MAXSCORE"/>
+                </qti-set-outcome-value>
+            </qti-response-if>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

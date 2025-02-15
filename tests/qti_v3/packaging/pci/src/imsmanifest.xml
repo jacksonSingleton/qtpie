@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest 
+    xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+    xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
+    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd" 
+    identifier="PCI_Example">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <lom:lom xmlns:lom="http://ltsc.ieee.org/xsd/LOM">
+            <lom:general>
+                <lom:identifier>
+                    <lom:catalog>
+                        urn:fdc:hmhco.com:2019:contentPackage:tapToRevealExample
+                    </lom:catalog>
+                </lom:identifier>
+                <lom:title>
+                    <lom:string language="en">
+                        Example of Packaging a PCI in QTI 3.0
+                    </lom:string>
+                </lom:title>
+                <lom:language>en</lom:language>
+                <lom:description>
+                    <lom:string language="en">This package contains multiple items
+                        each using one or more PCIs and shows how the PCI AMD modules and
+                        module resolution configuration files may be packaged.
+                    </lom:string>
+                </lom:description>
+            </lom:general>
+            <lom:lifeCycle>
+                <lom:version>
+                    <lom:string language="en">1.0</lom:string>
+                </lom:version>
+                <lom:status>
+                    <lom:source>LOMv1.0</lom:source>
+                    <lom:value>Final</lom:value>
+                </lom:status>
+            </lom:lifeCycle>
+            <lom:metaMetadata>
+                <lom:metadataschema>LOMv1.0</lom:metadataschema>
+                <lom:metadataschema>QTIv3.0</lom:metadataschema>
+                <lom:language>en</lom:language>
+            </lom:metaMetadata>
+            <lom:technical>
+                <lom:format>text/x-imsqti-item-xml</lom:format>
+            </lom:technical>
+            <lom:rights>
+                <lom:description>
+                    <lom:string language="en">(c) 2017,2018,2019 Houghton Mifflin Harcourt. (9780544727984)</lom:string>
+                </lom:description>
+            </lom:rights>
+        </lom:lom>
+    </metadata>
+    <organizations />
+
+    <resources>
+        <resource type="imsqti_item_xmlv3p0" identifier="measuringPh" href="measuring_ph.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:tapToReveal</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="measuring_ph.xml" />
+            <file href="ammonia.svg" />
+            <file href="baking_soda.svg" />
+            <file href="vinegar.svg" />
+            <dependency identifierref="pci_module_tap" />
+            <dependency identifierref="pci_module_resolution" />
+        </resource>
+        <resource type="webcontent" identifier="pci_module_resolution" 
+                  href="modules/module_resolution.js">
+            <file href="modules/module_resolution.js" />
+        </resource>
+        <resource type="webcontent" identifier="pci_module_tap" href="modules/tap.js">
+            <file href="modules/tap.js" />
+        </resource>
+        <resource type="imsqti_item_xmlv3p0" identifier="fractions-no-dependencies" href="fractions1.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:shading</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="fractions1.xml" />
+            <dependency identifierref="pci_module_shading" />
+            <!-- no module resolution file referenced -->
+        </resource>
+        <resource type="webcontent" identifier="pci_module_shading" href="modules/shading.js">
+            <file href="modules/shading.js" />
+        </resource>
+        <resource type="imsqti_item_xmlv3p0" identifier="fractions-dependencies-module-path" 
+                  href="fractions_deps.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:shading_deps</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="fractions_deps.xml" />
+            <dependency identifierref="pci_module_shading_deps" />
+            <!-- no module resolution file referenced -->
+        </resource>
+        <resource type="webcontent" identifier="pci_module_shading_deps" href="modules/shading_deps.js">
+            <file href="modules/shading_deps.js" />
+            <file href="modules/lib/eve.js" />
+            <file href="modules/lib/raphael.js"/>
+            <!-- jQuery is loaded from a CDN, not referenced from the package.
+            No module resolution configuration file is referenced -->
+        </resource>
+        <resource type="imsqti_item_xmlv3p0" identifier="fractions-primary-configuration" 
+                  href="fractions_deps_2.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:shading</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="fractions_deps_2.xml" />
+            <dependency identifierref="pci_module_shading_deps_2" />
+            <!-- no module resolution file referenced -->
+        </resource>
+        <resource type="webcontent" identifier="pci_module_shading_deps_2" href="modules/shading_deps.js">
+            <file href="modules/shading_deps.js" />
+            <file href="modules/lib/eve.js" />
+            <file href="modules/lib/raphael.js"/>
+            <file href="modules/lib/jquery-2.2.2.min.js"/>
+            <dependency identifierref="hmh_pci_module_resolution" />
+            <!-- jQuery is loaded from a CDN, not referenced from the package.
+            No module resolution configuration file is referenced -->
+        </resource>
+        <resource type="webcontent" identifier="hmh_pci_module_resolution" 
+                  href="modules/hmh_co_com.js">
+            <file href="modules/hmh_co_com.js" />
+            <file href="modules/hmh_co_com_fallback.json" />
+        </resource>
+    </resources>
+</manifest>
