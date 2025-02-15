@@ -1,10 +1,10 @@
 ![Logo](./full_t.png)
 
 # QTPIE
-## Quiz and Test Parsing and Importing Engine
+## Quiz and Test Parsing and Interoperability Engine
 ---
 
-QTPIE is a tool for parsing and importing quiz and test files in the QTI format
+QTPIE is a tool for parsing and validating QTI files.
 
 It is a CLI executable that can be used to convert and validate QTI files for use in other systems and data pipelines
 
