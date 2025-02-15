@@ -1,7 +1,8 @@
 ![Logo](./full_t.png)
 
 # QTPIE
-## Quiz and Test Parsing and Interoperability Engine
+Quiz and Test Parsing and Interoperability Engine
+
 ---
 
 QTPIE is a tool for parsing and validating QTI files.
