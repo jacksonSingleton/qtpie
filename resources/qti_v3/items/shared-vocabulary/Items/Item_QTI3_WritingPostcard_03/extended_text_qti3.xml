@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd" adaptive="false" identifier="qti3-extended-text-03" time-dependent="false" title="Writing a Postcard 3 - Extended Text - qti3">
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
+    <div class="row">
+      <div class="span8">
+        <p>Read this postcard from your English pen-friend, Sam.</p>
+        <div>
+          <object data="images/postcard.png" type="image/png">
+            <blockquote class="postcard">
+              <p>
+                Here is a postcard of my town. Please send me<br/> a postcard from your town.
+                What size is your<br/> town? What is the nicest part of your town?<br/>
+                Where do you go in the evenings?<br/> Sam.
+              </p>
+            </blockquote>
+          </object>
+        </div>
+
+        <p>
+          <br/>qti-expected-length=6<br/>
+          patternmask=[0-9\.]+<br/>
+          data-patternmask-message=Maximum of 6 digits or a decimal point permitted<br/>
+        </p>
+        <qti-extended-text-interaction class="qti-height-lines-3" patternMask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" format="plain" expected-length="6" response-identifier="RESPONSE">
+          <qti-prompt>
+            <p>
+              <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo class="sign">×</mo><mrow><mi>tan</mi><mo>⁡</mo><mfenced><mrow><mn>67</mn></mrow></mfenced></mrow></mrow></math> =
+            </p>
+          </qti-prompt>
+        </qti-extended-text-interaction>
+      </div>
+    </div>
+  </qti-item-body>
+</qti-assessment-item>
