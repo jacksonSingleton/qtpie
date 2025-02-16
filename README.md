@@ -1,7 +1,7 @@
 ![Logo](./full_t.png)
 
-# QTPIE
-Quiz and Test Parsing and Interoperability Engine
+<h1 align="center">QTPIE</h1>
+<p align="center">Quiz and Test Parsing and Interoperability Engine</p>
 
 ---
 
