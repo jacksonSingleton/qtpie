@@ -1,0 +1,68 @@
+{
+  "packaging": {
+    "imsqtiv3p0_imscpv1p2_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1"
+    },
+    "imsqtiv3p0_cpextv1p2_v1p0.xsd": {
+      "schema": "http://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_cpextv1p2_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_extensionv1p2"
+    }
+  },
+  "qti": {
+    "imsqti_asiv3p0p1_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_itemv3p0p1_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_itemv3p0p1_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_testv3p0p1_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_testv3p0p1_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_sectionv3p0p1_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_sectionv3p0p1_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_stimulusv3p0p1_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_stimulusv3p0p1_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_outcomev3p0_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_outcomev3p0_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_responseprocessingv3p0_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_responseprocessingv3p0_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    },
+    "imsqti_resultv3p0_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_resultv3p0_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqti_result_v3p0"
+    },
+    "imsqti_usagedatav3p0_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_usagedatav3p0_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqti_usagedata_v3p0"
+    }
+  },
+  "metadata": {
+    "imsqtiv3p0_csmv1p1_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_csmv1p1_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1"
+    },
+    "imsmd_loose_v1p3p2.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd",
+      "namespace": "http://ltsc.ieee.org/xsd/LOM"
+    },
+    "imsqti_metadatav3p0_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/imsqti_metadata_v3p0"
+    },
+    "imsqtiv3p0_afa3p0drd_v1p0.xsd": {
+      "schema": "https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_afa3p0drd_v1p0.xsd",
+      "namespace": "http://www.imsglobal.org/xsd/qti/qtiv3p0/imsafa3p0drd_v1p0"
+    }
+  }
+}

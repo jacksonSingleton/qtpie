@@ -5,7 +5,7 @@
 
 
 # What Is QTPIE?
-QTPIE is a tool for parsing and validating QTI files.
+QTPIE is a tool for parsing and validating QTIv3 files.
 
 It is a CLI executable that can be used to convert and validate QTI files for use in other systems and data pipelines
 
