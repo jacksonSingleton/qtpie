@@ -2,11 +2,10 @@ const std = @import("std");
 
 const Allocator = std.mem.Allocator;
 
-/// Read a JSON file from the filesystem into memory and return the parsed JSON value.
+//TODO: potentially increase file size
+/// Read a JSON file from the filesystem into memory (up to 16MB) and return the parsed JSON value.
 pub fn read_json(allocator: Allocator, path: []const u8) !std.json.Value {
-    //const file_size = try std.fs.cwd().openFile(path, .{}).Stat().size;
-    const file_size = 16_000_000;
-    const data = try std.fs.cwd().readFileAlloc(allocator, path, file_size);
+    const data = try std.fs.cwd().readFileAlloc(allocator, path, 16_000_000);
     defer allocator.free(data);
     const parsed = try std.json.parseFromSlice(std.json.Value, allocator, data, .{ .allocate = .alloc_always });
     return parsed.value;
