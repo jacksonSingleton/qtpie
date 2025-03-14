@@ -2,7 +2,6 @@ const std = @import("std");
 
 const Allocator = std.mem.Allocator;
 
-/// Read a JSON file from the filesystem into memory and return the parsed JSON value.
 pub fn read_json(allocator: Allocator, path: []const u8) !std.json.Value {
     //const file_size = try std.fs.cwd().openFile(path, .{}).Stat().size;
     const file_size = 16_000_000;
